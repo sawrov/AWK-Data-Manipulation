@@ -1,0 +1,9 @@
+#!/bin/bash
+
+var=null
+time=23:45:34
+echo $time
+if [ true ];then
+	var=$(echo $time | awk -F: '{print$1":"$2":"$3}')
+fi
+echo $var
